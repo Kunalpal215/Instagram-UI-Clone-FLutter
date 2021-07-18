@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'DM.dart';
 
 class Mainpage extends StatefulWidget {
 
@@ -119,7 +120,9 @@ class _MainpageState extends State<Mainpage> {
                     color: Colors.black,
                   ))),
           IconButton(
-              onPressed: () {},
+              onPressed: () {
+                Navigator.push(context, MaterialPageRoute(builder: (context)=>dm()));
+              },
               icon: Icon(
                 Icons.send_rounded,
                 size: 30.9,
